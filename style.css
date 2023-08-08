@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  margin: 0;
+  color: #000000;
+  background-color: rgb(11, 0, 71);
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+
+.App {
+  color: whitesmoke;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcXKC-LEaHNt7F9hgNiToUYhkS4oV1ecrGPQ&usqp=CAU")
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  padding: 0 4px;
+  border-top: 2rem solid transparent;
+  border-bottom: 2rem solid transparent;
+  background-color: white;
+  background-clip: padding-box;
+}
+
+.blur {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.664);
+  /*backdrop-filter: blur(1rem);*/
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.App {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100vh;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+
+.left {
+  width: 35vw;
+}
+
+.left .container {
+  padding: 3rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.intro {
+  text-align: justify;
+  font-size: 1.23vw;
+  font-weight: 600;
+}
+
+.container {
+  overflow: overlay;
+  overflow-x: hidden;
+  display: flex;
+  z-index: 2;
+  justify-content: center;
+  height: 100%;
+  border-radius: 1rem;
+  /* background: rgba(255, 255, 255, 0.438); */
+  background: rgba(0, 0, 0, 0.438);
+  color: whitesmoke;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.main {
+  flex-direction: column;
+  gap: 1.3rem;
+  padding: 2rem;
+  justify-content: flex-start;
+}
+
+.topic {
+  display: flex;
+  align-items: flex-start;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 77%;
+}
+
+.title {
+  display: flex;
+  font-size: 1.6vw;
+  font-weight: 600;
+  width: 23%;
+}
+
+.edu-title {
+  font-weight: 500;
+  font-size: 1.4vw;
+}
+.edu-desc {
+  font-weight: 300;
+  font-size: 1.25vw;
+}
+
+.skill {
+  display: flex;
+  gap: 1rem;
+}
+
+.skill-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.progress-track {
+  box-sizing: content-box;
+  height: 0.6rem;
+  width: 20vw;
+  border-radius: 1rem;
+  background-color: black;
+}
+
+.progress-thumb {
+  display: block;
+  position: relative;
+  height: 0.6rem;
+  border-radius: 1rem;
+  background-color: whitesmoke;
+}
+
+.icon {
+  font-size: 2.8vw;
+}
+
+.tool-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.tool-content {
+  justify-content: center;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.project-name {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4vw;
+  font-weight: 500;
+}
+
+.project-tool {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.project-desc {
+  font-size: 1.15vw;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.up {
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  height: 30%;
+  gap: 0.5rem;
+  overflow: hidden;
+}
+
+.up-title {
+  font-size: 2.75vw;
+  display: flex;
+  gap: 1rem;
+}
+
+.up-desc {
+  font-size: 2.1vw;
+  font-weight: 300;
+}
+
+.right {
+  width: 65vw;
+}
+
+.photo {
+  background: white;
+  height: 15vw;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: 0 -0.7rem;
+  border-radius: 50%;
+}
+
+.social {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.social-item {
+  font-size: 1.4vw;
+  background-color: whitesmoke;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.cert-item,
+.hobby-item {
+  font-size: 1.25vw;
+}
+
+.skill-title {
+  font-size: 1.3vw;
+}
